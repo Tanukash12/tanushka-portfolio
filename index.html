@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanushka Kashyap | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #1a1a1a, #2c2c2c);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #3a3a3a;
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .initials {
+      background: black;
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .intro {
+      padding: 100px 30px 40px;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+    .intro-text {
+      max-width: 600px;
+    }
+    .intro-text h1 {
+      font-size: 60px;
+    }
+    .intro-text span {
+      color: rgb(2, 187, 187);
+    }
+    .intro-text p {
+      text-align: justify;
+      color: rgb(219, 217, 217);
+    }
+    .intro img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .section {
+      padding: 40px 30px;
+      
+    }
+    .section h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+    }
+    .card h4{
+        color:rgb(2, 187, 187);
+    }
+    .cert-card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .cert-card h3 {
+      text-align: center;
+      font-size: 30px;
+    }
+    .cert-card p {
+      margin: 10px 0;
+    }
+    .skills {
+      display: flex;
+      cursor: pointer;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .skill-icon {
+      font-size: 30px;
+      transition: transform 0.2s;
+    }
+    .skill-icon:hover::after {
+      content: attr(data-name);
+      display: block;
+      color: #ccc;
+      font-size: 12px;
+      position: absolute;
+    }
+    .fun-box {
+      background: #1f1f1f;
+      border-radius: 20px;
+      padding: 30px;
+      margin: auto;
+      max-width: 1000px;
+    }
+    .fun-box a:link{
+        color: rgb(2, 187, 187);
+    }
+
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+    .slider-track {
+      display: flex;
+      width: calc(220px * 10);
+      animation: scroll 40s linear infinite;
+    }
+    .slider-track img {
+      width: 250px;
+      margin-right: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .contact {
+      padding: 30px;
+      text-align: center;
+    }
+    .contact h2{
+        font-size: 30px;
+    }
+    .socials i {
+      font-size: 25px;
+      color: white;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    .card a:link {
+        color: rgb(2, 187, 187);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #111;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="initials">TK</div>
+    <a href="about.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#">Resume</a>
+  </nav>
+
+  <section class="intro" id="about">
+    <div class="intro-text">
+      <h1>Trust me, I'm a <span>Fullstack developer.</span></h1>
+      <p>Meet Tanushka Kashyap, full stack developer, and tech enthusiast exploring the future of development.
+      She has worked on diverse real-world projects and actively contributes to the student tech ecosystem. From hackathons to real-world projects, she believes in learning by doing.
+      Currently diving deep into backend development while experimenting with Web3 and blockchain technologies. <br><br>
+      <span style="color:#aaa">~ ChatGPT</span></p>
+      <p>To Gain, To Lose, To End, To Start Again ✨</p>
+    </div>
+    <img src="./assets/Tanu.jpeg" alt="Tanushka Kashyap">
+  </section>
+
+  <section class="section" id="experience">
+    <div class="cert-card">
+      <h3 style="font-size: 40px;">Work Experience</h3>
+      <p style="text-align: center;"><strong style="color:rgb(2, 187, 187);">DRONA SHIELD - Software Development Intern (Indian Army)</strong><br>
+    <p>Apr 2025 - Jun 2025</p>
+    <p>• Contributed to a secure Python-based web application for defense use. </p>
+    <p>• Designed UI/UX aligned with military-grade security protocols.</p>
+    <p>• Ensured robust, cross-platform functionality for Indian Army operations.</p>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 style="font-size: 40px;">Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="./assets/crowdfunding.png" alt="Blockchain Crowdfunding" width="100%" />
+        <h4>Blockchain Crowdfunding Platform</h4>
+        <p>MetaMask integrated cyberpunk-themed crowdfunding dApp.</p>
+        <a href="https://github.com/Tanukash12/Blockchain-Crowdfunding-app-byTk">GitHub</a>
+      </div>
+      <div class="card">
+        <img src="./assets/certificate.png" alt="Blockchain Certificate" width="100%" />
+        <h4>Blockchain Certificate Generator</h4>
+        <p>Issue and verify certificates with Solidity + IPFS.</p>
+        <a href="https://github.com/Tanukash12/Blockchain-Certificate-Generator">GitHub</a>
+      </div>
+      <div class="card">
+        <img src="vercel-project-3.png" alt="URL Shortener" width="100%" />
+        <h4>URL Shortener Web App</h4>
+        <p>JWT-authenticated short links with MongoDB + React.</p>
+        <a href="https://github.com/Tanukash12/Url_Shortener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certificates">
+    <div class="cert-card">
+      <h3 style="font-size: 40px;">Certificates</h3>
+      <p>
+        <a href="./assets/Programming In Java.pdf" target="_blank">JAVA (NPTEL)</a>
+        <p>Programming in Java – 83%    </p>
+        <p>Jan–Apr 2025</p>
+    </p>
+    <p>
+        <a href="./assets/Blockchain and its Applications.pdf" target="_blank">Blockchain (NPTEL)</a>
+        <p>Blockchain and its Applications – 62%  </p>
+        <p> Jan–Apr 2024</p>
+    </p>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 style="font-size: 40px;">Skills</h2>
+    <div class="skills">
+      <i class="fab fa-java skill-icon" data-name="Java"></i>
+      <i class="fab fa-js-square skill-icon" data-name="JavaScript"></i>
+      <i class="fab fa-python skill-icon" data-name="Python"></i>
+      <i class="fas fa-code skill-icon" data-name="C"></i>
+      <i class="fab fa-react skill-icon" data-name="React.js"></i>
+      <i class="fab fa-css3-alt skill-icon" data-name="CSS"></i>
+      <i class="fab fa-html5 skill-icon" data-name="HTML"></i>
+      <i class="fab fa-node skill-icon" data-name="Node.js"></i>
+      <i class="fas fa-database skill-icon" data-name="MongoDB"></i>
+      <i class="fas fa-database skill-icon" data-name="MySQL"></i>
+      <i class="fab fa-git-alt skill-icon" data-name="Git"></i>
+      <i class="fab fa-docker skill-icon" data-name="Docker"></i>
+      <i class="fab fa-aws skill-icon" data-name="AWS"></i>
+    </div>
+  </section>
+
+  <section class="section" id="events">
+    <div class="fun-box">
+      <div class="slider">
+        <div class="slider-track">
+          <img src="./assets/DEV.jpeg" />
+          <img src="./assets/bseCore.jpeg" />
+          <img src="./assets/gdg2.jpeg" />
+          <img src="./assets/BSE.jpeg" />
+          <img src="./assets/Tdev.jpeg" />
+          <img src="./assets/AVSAR.jpeg" />
+          <img src="./assets/work.jpeg" />
+          <img src="./assets/core.jpeg" />
+          <img src="./assets/DEVfun.jpeg" />
+          <img src="./assets/Samaarambh.jpeg" />
+        </div>
+      </div>
+      <p>Everyone says joining college communities is just a waste of time — but the truth is, they’re a gateway to stepping out of your comfort zone.
+        Being a part of 
+        <a href="https://mlsamiet.vercel.app/">MLSA MIET</a> 
+        has been one of the most meaningful phase of my college life.
+        Every experience, from hosting events to managing behind-the-scenes drama, shaped me into someone who thrives in both tech and teamwork.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 style="color: rgb(2, 187, 187);">Let's Connect </h2>
+    <p>Email: tanushkakashyap506@gmail.com</p>
+    <div class="socials">
+      <a href="https://github.com/Tanukash12" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/tanushka-kashyap-3b5a28211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © Tea_kay | 2025
+  </footer>
+
+</body>
+</html>
