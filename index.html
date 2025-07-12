@@ -91,6 +91,14 @@
     .card h4{
         color:rgb(2, 187, 187);
     }
+    .cert-card a {
+      color: rgb(2, 187, 187);   
+    }
+
+    .cert-card a:visited,
+    .cert-card a:hover {
+        color: rgb(26, 138, 138);
+      }
     .cert-card {
       background: #1c1c1c;
       border-radius: 10px;
@@ -177,6 +185,78 @@
       background: #111;
       font-size: 14px;
     }
+    /* ------------------- RESPONSIVE MEDIA QUERIES ------------------- */
+
+    /* Medium screens (tablets & small laptops) */
+    @media (max-width: 1024px) {
+      .intro {
+        padding: 100px 20px 40px;
+        gap: 30px;
+      }
+      .intro-text h1 {
+        font-size: 48px;
+      }
+    }
+
+    /* Small screens (mobiles & large phones) */
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        margin: 10px auto 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 40px;
+      }
+      .intro img {
+        width: 70%;
+        height: auto;
+        margin-top: 20px;
+      }
+      .intro-text h1 {
+        font-size: 40px;
+      }
+      .intro-text {
+        max-width: 100%;
+      }
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+      .skill-icon {
+        font-size: 26px;
+      }
+      .slider-track img {
+        width: 200px;
+      }
+    }
+
+    /* Extra‑small screens (older phones, very narrow viewports) */
+    @media (max-width: 480px) {
+      .intro-text h1 {
+        font-size: 32px;
+      }
+      .intro {
+        padding: 90px 15px 30px;
+      }
+      nav {
+        gap: 8px;
+        padding: 8px 12px;
+      }
+      .skill-icon {
+        font-size: 22px;
+      }
+      .slider-track img {
+        width: 160px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -184,6 +264,7 @@
   <nav>
     <div class="initials">TK</div>
     <a href="about.html">About</a>
+    <a href="services.html">Services</a>
     <a href="#projects">Projects</a>
     <a href="#certificates">Certificates</a>
     <a href="https://drive.google.com/file/d/1Ka02w5cZDcdWOcga-gJ-rUGEfOMfYZvQ/view?usp=sharing">Resume</a>
@@ -216,6 +297,16 @@
     <h2 style="font-size: 40px;">Projects</h2>
     <div class="cards">
       <div class="card">
+        <h4>Twitter-Youtube-Application</h4>
+        <p>A production-grade backend for a hybrid Twitter–YouTube app built with Node.js and Express. Features include user auth, video posting, tweet handling, and error management with clean code architecture and modular middleware.</p>
+        <a href="https://github.com/Tanukash12/Twitter-Youtube-Application-complete-Backend-Repo">GitHub</a>
+      </div>
+      <div class="card">
+        <h4>Job-Node-Tk</h4>
+        <p>A full-featured Jobs API using Node.js, MongoDB, and Express. Allows users to create, update, and manage job applications. Built with error-handlers, route protection, Swagger docs, and clean REST principles.</p>
+        <a href="https://github.com/Tanukash12/Job-Node-Tk">GitHub</a>
+      </div>
+      <div class="card">
         <img src="./assets/crowdfunding.png" alt="Blockchain Crowdfunding" width="100%" />
         <h4>Blockchain Crowdfunding Platform</h4>
         <p>MetaMask integrated cyberpunk-themed crowdfunding dApp.</p>
@@ -227,10 +318,9 @@
         <p>Issue and verify certificates with Solidity + IPFS.</p>
         <a href="https://github.com/Tanukash12/Blockchain-Certificate-Generator">GitHub</a>
       </div>
-      <div class="card">
-        <img src="vercel-project-3.png" alt="URL Shortener" width="100%" />
+      </div><div class="card">
         <h4>URL Shortener Web App</h4>
-        <p>JWT-authenticated short links with MongoDB + React.</p>
+        <p>JWT-authenticated URL shortening service using Node.js, MongoDB, and Express. Users can generate custom short links, track visits, and manage URLs. Built with modular routes, Mongo integration, and token-based access.</p>
         <a href="https://github.com/Tanukash12/Url_Shortener">GitHub</a>
       </div>
     </div>
