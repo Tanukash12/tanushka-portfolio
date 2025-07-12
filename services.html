@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanushka Kashyap | What I Can Do</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* ----------- CORE STYLES ----------- */
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #1a1a1a, #2c2c2c);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #3a3a3a;
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .initials {
+      background: #000;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 20px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header h1 {
+      font-size: 56px;
+      margin: 0;
+    }
+    header h1 span { color: rgb(2, 187, 187); }
+    header p { color: #ccc; line-height: 1.6; }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 0 20px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 25px 22px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: rgb(2, 187, 187);
+    }
+    .card ul {
+      padding-left: 18px;
+      margin: 0;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+    .card ul li::marker { color: rgb(2, 187, 187); }
+
+    footer {
+      text-align: center;
+      background: #111;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+
+    /* ----------- RESPONSIVE MEDIA QUERIES ----------- */
+    @media (max-width: 1024px) {
+      header h1 { font-size: 46px; }
+    }
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        margin: 10px auto 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      header { padding: 140px 20px 50px; }
+      header h1 { font-size: 38px; }
+      .card { width: 90%; }
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 32px; }
+      header { padding: 110px 15px 40px; }
+      .card { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="initials">TK</div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="https://drive.google.com/file/d/1Ka02w5cZDcdWOcga-gJ-rUGEfOMfYZvQ/view?usp=sharing">Resume</a>
+  </nav>
+
+  <header>
+    <h1>What I’m <span>Capable</span> Of</h1>
+    <p>Below are the tech stacks & CS foundations I’m most comfortable with (plus a few I’m actively levelling up). Each card sums up my current depth, recent projects, and what’s next on my roadmap.</p>
+  </header>
+
+  <section class="cards">
+    <!-- Backend -->
+    <div class="card">
+      <h3><i class="fa-solid fa-server"></i> Backend – Node.js</h3>
+      <ul>
+        <li>Capable of writing clean, efficient, and production-ready backend code.</li>
+        <li>Built REST & JWT‑secured APIs with Express.</li>
+        <li>Async handling with Promises, async/await, and error middleware.</li>
+        <li>Wrote test suites in Jest & Supertest.</li>
+        <li>Currently deep‑diving into micro‑services & event‑driven patterns.</li>
+      </ul>
+    </div>
+
+    <!-- Database -->
+    <div class="card">
+      <h3><i class="fa-solid fa-database"></i> Database – MongoDB</h3>
+      <ul>
+        <li>Schema design with Mongoose ODM.</li>
+        <li>Aggregation pipelines for analytics dashboards.</li>
+        <li>Index tuning & replica‑set basics.</li>
+        <li>Exploring advanced ACID‑transactions in Atlas.</li>
+      </ul>
+    </div>
+
+    <!-- Frontend -->
+    <div class="card">
+      <h3><i class="fa-solid fa-display"></i> Frontend – JavaScript</h3>
+      <ul>
+        <li>Vanilla JS + DOM manip for dynamic UIs.</li>
+        <li>SCSS modules & responsive layouts.</li>
+        <li>Currently exploring React hooks, context & Vite workflow.</li>
+        <li>Focus on accessible, mobile‑first design.</li>
+      </ul>
+    </div>
+
+    <!-- Blockchain -->
+    <div class="card">
+      <h3><i class="fa-brands fa-ethereum"></i> Blockchain</h3>
+      <ul>
+        <li>Basics of Solidity smart contracts (ERC‑20 & custom structs).</li>
+        <li>Deployed dApps with Hardhat & MetaMask.</li>
+        <li>IPFS storage integration & event logs.</li>
+        <li>Eager to dive deeper into DeFi patterns & security audits.</li>
+      </ul>
+    </div>
+
+    <!-- Tools & Cloud -->
+    <div class="card">
+      <h3><i class="fa-solid fa-toolbox"></i> Tools & Cloud</h3>
+      <ul>
+        <li>Git & GitHub workflows (branches, PRs, actions).</li>
+        <li>Dockerising Node & React apps for uniform dev‑prod parity.</li>
+        <li>Learning AWS Cloud Practitioner – S3, Lambda, IAM basics.</li>
+        <li>Nifty with VS Code, Postman, and Linux shell.</li>
+      </ul>
+    </div>
+
+    <!-- CS Foundations -->
+    <div class="card">
+      <h3><i class="fa-solid fa-code"></i> CS Foundations</h3>
+      <ul>
+        <li>Data Structures & Algorithms (arrays, linked lists, two‑pointer, BFS/DFS).</li>
+        <li>Relational DBMS principles (normalisation, indexing).</li>
+        <li>Operating System internals basics (process, threads, memory).</li>
+        <li>Actively Try solving DSA Questions & SQL challenges to sharpen speed.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © Tea_kay | 2025
+  </footer>
+</body>
+</html>
