@@ -92,6 +92,61 @@
       margin-bottom: 10px;
       color: #aaa;
     }
+      /* -------------- Responsive Media Queries -------------- */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 32px;
+  }
+
+  .about-text {
+    padding: 0 20px;
+  }
+
+  .profile img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: static;
+    margin: 20px 0;
+  }
+
+  .container {
+    padding: 80px 20px 40px;
+  }
+
+  .about-text h1 {
+    font-size: 26px;
+  }
+
+  .profile img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .socials i {
+    font-size: 20px;
+  }
+
+  .footer h3 {
+    font-size: 14px;
+  }
+}
   </style>
 </head>
 <body>
@@ -99,6 +154,7 @@
     <div class="initials">TK</div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+     <a href="services.html">Services</a>
     <a href="https://drive.google.com/file/d/1Ka02w5cZDcdWOcga-gJ-rUGEfOMfYZvQ/view?usp=sharing">Resume</a>
   </nav>
 
